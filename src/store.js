@@ -21,7 +21,7 @@ export function randomizeRate(min, max) {
 };
 
 export function reducer(state, action) {
-  if (action.type === 'INCREMENT') {
+  if (action.type === 'INCREMENT' && state.arrrrcoins >= 1) {
     return {
       doubloons: state.doubloons + exchangeRate,
       arrrrcoins: state.arrrrcoins - 1,
@@ -29,7 +29,7 @@ export function reducer(state, action) {
     };
   }
 
-  if (action.type === 'DECREMENT') {
+  if (action.type === 'DECREMENT' && state.doubloons >= exchangeRate) {
     return {
       doubloons: state.doubloons - exchangeRate,
       arrrrcoins: state.arrrrcoins + 1,

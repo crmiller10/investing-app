@@ -10,7 +10,7 @@ class App extends Component {
 
   constructor(props) {
     super(props);
-    setInterval(this.props.update, 3000);
+    setInterval(this.props.update, 1000);
   }
 
   render() {
