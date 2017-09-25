@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import { exchangeRateAction, buyAction, sellAction, reducer } from './store';
+import { exchangeRateAction, buyAction, sellAction } from './store';
 
 // Black magic, come forth
 import { connect } from 'react-redux';

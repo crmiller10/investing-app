@@ -54,5 +54,5 @@ export const store = createStore(reducer,
     arrrrcoins: 0,
     exchangeRate: exchangeRate,
   },
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
